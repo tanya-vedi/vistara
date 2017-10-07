@@ -57,7 +57,11 @@
     font-style: normal
 }
 
+@font-face {
+    font-family: futura;
+    src: url(Futura.ttf);
 
+}
 /*#loader-wrapper {
   position: fixed;
   top: 0;
@@ -483,9 +487,138 @@ body,
     padding: 0;
     text-decoration: none
 }
+form
+{
+  padding-top: 2%;
+}
+input{
+  border-radius: 5px;
+
+}
 
 :focus {
     outline: 0
+}
+
+ul{
+
+position: absolute;
+top:40%;
+left:54%;
+display: flex;
+transform: translate(-50% ,-50%);
+ -webkit-transform: translateX(-800px);
+    -ms-transform: translateX(-800px);
+    transform: translateX(-800px);
+    -webkit-transition: .5s cubic-bezier(1, .01, .3, 1) 13s;
+    transition: .5s cubic-bezier(1, .01, .3, 1) .3s
+}
+
+.load ul {
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0)
+}
+
+.loadout ul {
+    -webkit-transform: translateX(30px);
+    -ms-transform: translateX(30px);
+    transform: translateX(30px);
+    opacity: 0;
+    -webkit-transition: .6s ease-out .4s;
+    transition: .6s ease-out .4s
+}
+/*till here*/
+ul li{
+  list-style: none;
+  font-family:'Pacifico', cursive;
+  font-size: 2.5em;
+    font-weight: 400;
+    margin-bottom: 9vh;
+  font-size: 4em;
+  color:#46143c;
+  animation: ani .72s linear infinite;
+}
+ul li:nth-child(1){
+  animation-delay: .2s;
+}
+ul li:nth-child(2){
+  animation-delay: .6s;
+}
+ul li:nth-child(3){
+  animation-delay: .10s;
+}
+ul li:nth-child(4){
+  animation-delay: .14s;
+}
+ul li:nth-child(5){
+  animation-delay: .18s;
+}
+ul li:nth-child(6){
+  animation-delay: .12s;
+}
+ul li:nth-child(7){
+  animation-delay: .16s;
+}
+ul li:nth-child(8){
+  animation-delay: .20s;
+}
+ul li:nth-child(9){
+  animation-delay: .24s;
+}
+ul li:nth-child(10){
+  animation-delay: .28s;
+}
+ul li:nth-child(11){
+  animation-delay: .32s;
+}
+ul li:nth-child(12){
+  animation-delay: .36s;
+}
+ul li:nth-child(13){
+  animation-delay: .40s;
+}
+ul li:nth-child(14){
+  animation-delay: .44s;
+}
+ul li:nth-child(15){
+  animation-delay: .48s;
+}
+ul li:nth-child(16){
+  animation-delay: .52s;
+}
+ul li:nth-child(17){
+  animation-delay: 0.56s;
+}
+ul li:nth-child(18){
+  animation-delay: .60s;
+}
+ul li:nth-child(19){
+  animation-delay: .64s;
+}
+ul li:nth-child(20){
+  animation-delay: .68s;
+}
+ul li:nth-child(21){
+  animation-delay: .72s;
+}
+ul li:nth-child(22){
+  animation-delay: .76s;
+}
+
+@keyframes ani {
+  0%{
+     color:#a9759f;
+     text-shadow:#4FF;
+  }
+  90%{
+     color:#43143c;
+     text-shadow: #4ff;
+  }
+  100%{
+     color:#fff;
+     text-shadow: 0 0 7px #4ff,0 0 70px #00ff00;
+  }
 }
 
 h1,
@@ -883,7 +1016,7 @@ a:visited {
     width: 110%;
     position: absolute;
     left: -5%;
-    bottom: 83px;
+    bottom: 0;
     -webkit-transform: translateY(440px);
     -ms-transform: translateY(440px);
     transform: translateY(440px);
@@ -1007,7 +1140,8 @@ a:visited {
 }
 
 .nav-eve .nav-bg {
-    background: url(../img/vw/eve-temp.jpg) 0 50% no-repeat
+    background: url(../img/vw/eve-temp.jpg) no-repeat;
+    background-size:cover;
 }
 
 .nav-eve .nav-heading {
@@ -1024,7 +1158,8 @@ a:visited {
 }
 
 .nav-warcraft .nav-bg {
-    background: url(../img/vw/warcraft-temp.jpg) 0 50% no-repeat
+    background: url(../img/vw/warcraft-temp.jpg) no-repeat center;
+    background-size: 700px;
 }
 
 .nav-warcraft .nav-heading {
@@ -1036,7 +1171,8 @@ a:visited {
 }
 
 .nav-secondlife .nav-bg {
-    background: url(../img/vw/secondlife-temp.jpg) 0 50% no-repeat
+    background: url(../img/vw/secondlife-temp.jpg) no-repeat center;
+    background-size: 700px;
 }
 
 .nav-secondlife .nav-heading {
@@ -2083,6 +2219,8 @@ footer.large .foot-planet .text {
     background-image: url(../img/vw/layers/eve/gas.png);
     -webkit-transition-delay: .1s;
     transition-delay: .1s
+        height: 130%;
+    width: 100%;
 }
 
 .eve-bg .layer-2 {
