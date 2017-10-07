@@ -116,15 +116,16 @@
     </head>
 
     <body class="start">
-         <div id="loader-wrapper">
+        <!--  <div id="loader-wrapper">
             <div id="loader">
               
             </div>
             <div class="loader-section section-left"></div>
             <div class="loader-section section-right"></div>
           </div>
+ -->
 
-
+        <div id="preloader"></div>
 
 
     
@@ -171,9 +172,9 @@
                             <div class="grad"></div>
                         </div>
                         <div class="skew inner">
-                            <p class="nav-heading"><span>Online Events</span></p>
+                            <p class="nav-heading"><span>Boarding Pass</span></p>
                             <p class="nav-desc"> </p>
-                            <p class="explore"><span></span>Explore</p>
+                            <p class="explore"><span></span>Get your boarding pass</p>
                             </div>
                         </div>
                     <div class="nav-warcraft" data-section="wow">
@@ -181,9 +182,9 @@
                             <div class="grad"></div>
                         </div>
                        <a href="eventsFun.html"> <div class="skew inner">
-                            <p class="nav-heading"><span style="font-size:0.7em;">Fun+Designing+ Robotics Events</span></p>
-                            <p class="nav-desc">Here are some events.</p>
-                            <p class="explore"><span></span>Explore</p>
+                            <p class="nav-heading"><span style="font-size:0.7em;">Utilise your time</span></p>
+                            
+                            <p class="explore"><span></span>Don't get bored</p>
                             
                            
                         </div></a>
@@ -193,9 +194,9 @@
                             <div class="grad"></div>
                         </div>
                         <a href="eventsTech.html"><div class="skew inner">
-                            <p class="nav-heading"><span>Tech Events</span></p>
-                            <p class="nav-desc">Here are some tech events.</p>
-                            <p class="explore"><span></span>Explore</p>
+                            <p class="nav-heading"><span>Feedback</span></p>
+                           
+                            <p class="explore"><span></span>Did you like us?</p>
                             
                             
 
@@ -441,24 +442,44 @@ Venue – codezen -<a href="https://codingninjas.in/app/events/21"> https://codi
             
              <!-- GOOGLE PLUS ONE -->
         <script>
-          (function(d,s,id) {
-            var js,fjs=d.getElementsByTagName(s)[0];
-            if(d.getElementById(id)) return;
-            js=d.createElement(s);
-            js.async = true;
-            js.id = id;
-            js.src = '../../apis.google.com/js/plusone.js';
-            fjs.parentNode.insertBefore(js, fjs);
-          })(document,"script","google-po");
+    //       (function(d,s,id) {
+    //         var js,fjs=d.getElementsByTagName(s)[0];
+    //         if(d.getElementById(id)) return;
+    //         js=d.createElement(s);
+    //         js.async = true;
+    //         js.id = id;
+    //         js.src = '../../apis.google.com/js/plusone.js';
+    //         fjs.parentNode.insertBefore(js, fjs);
+    //       })(document,"script","google-po");
           
           
-          $(document).ready(function($) {
-        // hide preloader when everthing in the document load
-        setTimeout(function() {
-        $('body').addClass('loaded');
-    }, 3500);
-    });
-    
+    //       $(document).ready(function($) {
+    //     // hide preloader when everthing in the document load
+    //     setTimeout(function() {
+    //     $('body').addClass('loaded');
+    // }, 3500);
+    // });
+    var preloader;
+
+function preload(opacity) {
+    if(opacity <= 0) {
+        showContent();
+    }
+    else {
+        preloader.style.opacity = opacity;
+        window.setTimeout(function() { preload(opacity - 0.9) }, 1000);
+    }
+}
+
+function showContent() {
+    preloader.style.display = 'none';
+    document.getElementById('content').style.display = 'block';
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+    preloader = document.getElementById('preloader');
+    preload(1.75);
+});
         </script>
 
         <!-- PINTEREST -->
