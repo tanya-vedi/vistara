@@ -9,7 +9,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <link rel="shortcut icon" href="/assets/images/red.png" /> 
-        <title>Innerve'17</title>
+        <title>Vistara Airport Experience</title>
         
 
         <meta property="og:title" content="INNERVE'17">
@@ -21,6 +21,7 @@
 
         <link rel="stylesheet" href="css/styles.min.css">
         <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+ <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
 
         <!--[if IE 8]>
             <link rel="stylesheet" type="text/css" href="css/ie8.css" />
@@ -97,6 +98,21 @@
 .hero-search{margin-top:40px;}
 .search-popup .hero-search{margin-top:80px;}
            
+        .upload{
+            margin: 0 auto;
+            width: 50%;
+        }
+        
+        #uploadBtn{
+            background-color: #395fb0;
+            border-bottom: 3px solid #304777;
+            display:block;
+            width: 100px;
+            text-align: center;
+            padding: 20px 40px;
+            color: white;
+            border-radius: 4px;
+        }
 
         </style>
 
@@ -104,8 +120,6 @@
     </head>
 
     <body class="start">
-             <a href="/index.html"><div class="header-search-button"></div></a>
-
         <!-- FACEBOOK -->
         <div id="fb-root"></div>
         <script>(function(d, s, id) {
@@ -123,9 +137,9 @@
                 <div class="intro-bg"></div>
                 <div class="intro-clouds"></div>
                 <div class="intro-planet"></div>
-               <!--  <div class="intro-content">
+                <div class="intro-content">
                     <div class="hgroup">
-                        <div class="t-top">
+                        <!--div class="t-top">
                             <div class="inner text-virtual"><h1><span class="hidden"></span></h1></div>
                         </div>
                         <div class="t-bottom">
@@ -133,38 +147,38 @@
                         </div>
                     </div>
                     <p></p>
-                </div> -->
+                </div-->
                 <!-- Menu -->
-                <nav class="nav-menu">
+                <!--nav class="nav-menu">
                     <div class="nav-eve" data-section="eve">
                         <div class="skew nav-bg">
                             <div class="grad"></div>
                         </div>
-                        <div class="skew inner">
-                            <p class="nav-heading"><span>Ece Events</span></p>
+                        <a href="eventsFun.html"><div class="skew inner">
+                            <p class="nav-heading"><span>Fun Events</span></p>
                             <p class="nav-desc"> </p>
-                            <p class="explore"><span></span>Explore</p>
-                            </div>
+                            <p class="explore"><span></span>COMING SOON</p>
+                            </div></a>
                         </div>
                     <div class="nav-warcraft" data-section="wow">
                         <div class="skew nav-bg">
                             <div class="grad"></div>
                         </div>
-                        <div class="skew inner">
-                            <p class="nav-heading"><span>Cse Events</span></p>
+                        <a href="eventsFun.html"><div class="skew inner">
+                            <p class="nav-heading"><span>Designing Events</span></p>
                             <p class="nav-desc"></p>
                              
-                            <p class="explore"><span></span>Explore</p>
+                            <p class="explore"><span></span>COMING SOON</p>
                             
                            
-                        </div>
+                        </div></a>
                     </div>
                     <div class="nav-secondlife" data-section="secondlife">
                         <div class="skew nav-bg">
                             <div class="grad"></div>
                         </div>
                         <div class="skew inner">
-                            <p class="nav-heading"><span>MAE Events</span></p>
+                            <p class="nav-heading"><span>Robotics Events</span></p>
                             <p class="nav-desc"></p>
                             <p class="explore"><span></span>Explore</p>
                             
@@ -174,18 +188,18 @@
                     </div>
                 </nav>
                 
-            </div><!-- /.intro -->
+            </div--><!-- /.intro -->
 
             <!-- Content -->
-            <div class="content">
+            <!--div class="content">
                 <div class="menu-bar-container">
                     <div class="menu-bar">
                         <!-- <div class="site-width"> -->
-                            <a href="#" class="menu-button">
+                            <!--a href="#" class="menu-button">
                                 <span></span>
                                 <span></span>
                                 <span></span>
-                            </a>
+                            </a-->
                             <!--
                             <a href="#" class="social-trigger"></a>
                             <ul class="social">
@@ -255,19 +269,36 @@
                         <!-- Interactive Layer -->
                         <ul class="world-interact">
                             <li class="layer interact" data-depth="0.40">
-                                <div class="blob b1"><span data-tooltip="Snake Vs. Codes" data-tooltip-position="bottom"></span></div>
-                                <div class="blob b2"><span data-tooltip="The Tech Probe" data-tooltip-position="bottom"></span></div>
-                                <div class="blob b3"><span data-tooltip="Potter Mania" data-tooltip-position="bottom"></span></div>
+                                <div class="blob b1"><span data-tooltip="Tech Meme-A-Thon" data-tooltip-position="bottom"></span></div>
+                                <div class="blob b2"><span data-tooltip="Tech Meme-A-Thon" data-tooltip-position="bottom"></span></div>
+                                <div class="blob b3"><span data-tooltip="Tech Meme-A-Thon" data-tooltip-position="bottom"></span></div>
+                                <div class="blob b4"><span data-tooltip="Tech Meme-A-Thon" data-tooltip-position="bottom"></span></div>
                                 
                                 
                             </li>
 
                             
                         </ul><!-- /.interact -->
-
+                        <br><br>
+                        <div class="content">
+                       
+                <div style="margin-top:340px;margin-left:320px;">
+                 <div style="font-family:'Pacifico', cursive;
+  font-size: 2.5em;
+    font-weight: 400;
+  margin-left: 28%;
+  font-size: 4em;
+  color:#46143c;"> Feedback </div>
+                    <form action="boarding_events.php" method="post" class="upload">
+                        <input type="text" style="width:270px; background-color:white;height:150px;">
+                        <br><br>
+                        <input id="submitBtn" type="submit" style="background-color:#46143c ;color:white; padding:5px;"; >
+                    </form>
+                </div>
+            </div>
                         
                     </div>
-                </div>
+               </div>
 
             </div><!-- /.content -->
 
@@ -283,285 +314,26 @@
 
 
 
-
+            <div class="content">
+                <div>
+                    <form action="boarding_events.php" method="post" class="upload">
+                        <input id="uploadBtn" type="file" accept="image/*" name="pass">
+                        <input id="submitBtn" type="submit" style="background-color:black;top:140px;">
+                    </form>
+                </div>
+            </div>
 
             <div class="overlays">
 
-                <div class="wow-overlays">
-                    <!-- WOW INTRO -->
-                    <div class="overlay wow-intro intro-overlay">
-                        <div class="inner">
-                            <div class="centered">
-                                <p class="info-heading">CSE/IT Events</p>
-                                <div class="inner-content">
-                                    <p>Here are some Cse/IT events. Use plus button to explore about the event.</p>
-                                </div>
-                                
-                            <p class="explore"><span></span>Explore</p>
-                           
-                           
-                            </div>
-                        </div>
-                    </div><!-- /.wow-intro -->
-
-                    <!-- WOW 1 -->
-                    <div class="overlay wow-b1">
-                        <div class="inner">
-                            <div class="centered">
-
-                                <p class="info-heading"> Snakes v/s Codes</p>
-                                <div style="overflow: auto;">
-                                <div class="inner-content">
-                                    <!--
-                                    <p class="info-sub-heading">Did you know?</p>
-                                    -->
-                                    <p id="demo1">You might be the master of your knowledge but not the master of your fate. Are you confident enough about your knowledge in computer science to take a chance and gamble with fate?<br> Innerve’17 presents ‘'Snakes v/s Codes’', a twist on the classic Snakes and ladders game. Each correct answer takes you to the end - else, stay where you started! <br> Date : 6.10.2017  Timings: 1:30PM - 3PM 
-                                        <br> For further details, mail us at<a href="mailto:innerve-techevents@gmail.com"> innerve-techevents@gmail.com </a>
-                                    </p>
-                                </div>
-                                </div>
-                                <br>
-                                <br>
-                                <!--
-                                class="explore" onclick="myFunction()" style="background-color:transparent; border:transparent;
-                                -->
-                                <div id="element1" style="position:relative; bottom:12px">
-                                <img src="rules.png" onclick="myFunction1()" id="rules">
-                                </div>
-                                <!-- <p id="demo"></p> -->
-                                <script>
-                                    function myFunction1(){
-                                        document.getElementById("demo1").innerHTML = "1. Use of internet during the event is prohibited <br> 2. Use of gadgets will not be allowed  <br> 3. A team should comprise of a maximum of two participants <br> ";
-                                }
-                                </script>
-                                
-                              
-                                <div id="element2" style="height:10px">
-                                    <a href='/registerevent.html'><p class="explore"><span></span>REGISTER</p></a>
-                                </div>
-                                <div id="element3" style="position:relative; bottom:19px">
-                                    <a href='https://m.facebook.com/igdtuwinnerve/photos/a.834600699984172.1073741828.833869116723997/1304725946304976/?type=3'><i class="fa fa-facebook-square fa-4x" aria-hidden="true" ></i></a>
-                                </div>
-                                <div id="element4" style="height:10px">
-                                <p class="explore"><span></span>Back</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-          <div class="overlay wow-b2">
-                        <div class="inner">
-                            <div class="centered">
-
-                                <p class="info-heading"> The Tech Probe</p>
-                                <div style="overflow: auto;">
-                                <div class="inner-content">
-                                    <!--
-                                    <p class="info-sub-heading">Did you know?</p>
-                                    -->
-                                    <p id="demo2">“There are always new, grander challenges to confront and a true winner embraces each on them”. Answers the questions on the trending and upcoming technologies correctly and prove yourself as a true winner. Inneve’17 presents ‘The Tech Probe’, the KBC of coding and technical knowledge. Take the help of your 3 helplines and stay in the game. Be cautious though - one wrong move and you’re out of the game!
-<br> Date: 6.10.2017 Timing: 11:30 AM-1:00 PM
-                                        <br> For further details, mail us at<a href="mailto:innerve-techevents@gmail.com"> innerve-techevents@gmail.com </a>
-                                    </p>
-                                </div>
-                                </div>
-                                <br>
-                                <br>
-                                <!--
-                                class="explore" onclick="myFunction()" style="background-color:transparent; border:transparent;
-                                -->
-                                <div id="element1" style="position:relative; bottom:12px">
-                                <img src="rules.png" onclick="myFunction2()" id="rules">
-                                </div>
-                                <!-- <p id="demo"></p> -->
-                                <script>
-                                    function myFunction2(){
-                                        document.getElementById("demo2").innerHTML = "1. Use of internet or opening new tabs leads to disqualification <br> 2. Use of any gadget during the event is not allowed  <br> 3.   It is an individual event ";
-                                }
-                                </script>
-                                
-                              
-                                <div id="element2" style="height:10px">
-                                    <a href='/registerevent.html'><p class="explore"><span></span>REGISTER</p></a>
-                                </div>
-                                <div id="element3" style="position:relative; bottom:19px">
-                                    <a href='https://m.facebook.com/story.php?story_fbid=1305664299544474&id=833869116723997'><i class="fa fa-facebook-square fa-4x" aria-hidden="true" ></i></a>
-                                </div>
-                                <div id="element4" style="height:10px">
-                                <p class="explore"><span></span>Back</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-
-          <div class="overlay wow-b3">
-                        <div class="inner">
-                            <div class="centered">
-
-                                <p class="info-heading"> POTTER MANIA</p>
-                                <div style="overflow: auto;">
-                                <div class="inner-content">
-                                    <!--
-                                    <p class="info-sub-heading">Did you know?</p>
-                                    -->
-                                    <p id="demo3">The name will itself leave you spellbound. Innerve’17 presents "Potter Mania", a coding game to bring out the Potterhead in you. If you are obsessed with Harry Potter and solving algorithms, data structures and puzzles, enter this world of magic – cross each level to destroy all horcruxes and defeat the evil Lord Voldemort. 
-Problem setter: Priyanshu and Abhra Dasgupta <br>
-Date: 7.10.2017 Timing: 10 AM-1:30 PM 
-                                        <br> For further details, mail us at<a href="mailto:innerve-techevents@gmail.com"> innerve-techevents@gmail.com </a>
-                                    </p>
-                                </div>
-                                </div>
-                                <br>
-                                <br>
-                                <!--
-                                class="explore" onclick="myFunction()" style="background-color:transparent; border:transparent;
-                                -->
-                                <div id="element1" style="position:relative; bottom:12px">
-                                <img src="rules.png" onclick="myFunction3()" id="rules">
-                                </div>
-                                <!-- <p id="demo"></p> -->
-                                <script>
-                                    function myFunction3(){
-                                        document.getElementById("demo3").innerHTML = "1. Use of internet or opening new tabs leads to disqualification. Copying code is not allowed <br> 2. Use of any gadget during the event is not allowed ";
-                                }
-                                </script>
-                                
-                              
-                                <div id="element2" style="height:10px">
-                                    <a href='/registerevent.html'><p class="explore"><span></span>REGISTER</p></a>
-                                </div>
-                                <div id="element3" style="position:relative; bottom:19px">
-                                    <a href='#'><i class="fa fa-facebook-square fa-4x" aria-hidden="true" ></i></a>
-                                </div>
-                                <div id="element4" style="height:10px">
-                                <p class="explore"><span></span>Back</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div><!-- wow-overlays -->
-
-                <div class="eve-overlays">
-                    <!-- eve INTRO -->
-                    <div class="overlay eve-intro intro-overlay">
-                        <div class="inner">
-                            <div class="centered">
-                                <p class="info-heading">ECE Events</p>
-                                <div class="inner-content">
-                                    <p>Here are some ece events. Use plus button to explore about the event.</p>
-                                </div>
-                                <p class="explore"><span></span>Explore</p>
-                            </div>
-                        </div>
-                    </div><!-- /.eve-intro -->
-                    <!-- EVE 1 -->
-                    <div class="overlay eve-b1">
-                        <div class="inner">
-                            <div class="centered">
-                               <p class="info-heading"> Drone Maze</p>
-                                <div style="overflow: auto; ">
-                                <div class="inner-content">
-                                    <!--
-                                    <p class="info-sub-heading">Did you know?</p>
-                                    -->
-                                    <p id="demo13">Drones are an up and coming piece of technology that are being put to use in many areas of life, and this event is perfect for people who want hone their skills in drone designing and modification.<br> Participants have to make their drones which will compete in various levels and the one whose drone cross all the levels in minimum time with the maximum points will be the winner, taking home the prize. Get ready to innovate and take drone making to a whole new level.<br> Date: 6.10.2017  Timings: 1PM - 4PM
-                                        <br> For further details, mail us at<a href="mailto:innerve-techevents@gmail.com"> innerve-techevents@gmail.com </a>
-
-                                    </p>
-                                </div>
-                                </div>
-                                <br>
-                                <br>
-                                <!--
-                                class="explore" onclick="myFunction()" style="background-color:transparent; border:transparent;
-                                -->
-                                <div id="element1" style="position:relative; bottom:12px">
-                                <img src="rules.png" onclick="myFunction13()" id="rules">
-                                </div>
-                                <!-- <p id="demo"></p> -->
-                                <script>
-                                    function myFunction13(){
-                                        document.getElementById("demo13").innerHTML ="1. Login to become registered user<br> 2.Drone has to cross the obstacles in minimum time <br> 3. The drone will have to complete the track passing all the hurdles successfully and in minimum time possible  <br> 4. Points will be deducted in case of foul <br>  5. The drone should be able to move Left/right and Up/down <br> 6. The Drone should be self constructed and not be a toy/bought from the market  <br> 7. A team should comprise of a maximum of four participants ";
-
-
-                                }
-                                </script>
-                                
-                              
-                                <div id="element2" style="height:10px">
-                                    <a href='/registerevent.html'><p class="explore"><span></span>REGISTER</p></a>
-                                </div>
-                                <div id="element3" style="position:relative; bottom:19px">
-                                    <a href='                      https://m.facebook.com/igdtuwinnerve/photos/a.834600699984172.1073741828.833869116723997/1304739292970308/?type=3'><i class="fa fa-facebook-square fa-4x" aria-hidden="true" ></i></a>
-                                </div>
-                                <div id="element4" style="height:10px">
-                                <p class="explore"><span></span>Back</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!-- /.eve-b1 -->
-                      <div class="overlay eve-b2">
-                        <div class="inner">
-                            <div class="centered">
-                               <p class="info-heading"> Arduino Mania</p>
-                                <div style="overflow: auto; ">
-                                <div class="inner-content">
-                                    <!--
-                                    <p class="info-sub-heading">Did you know?</p>
-                                    -->
-                                    <p id="demo14">Innerve 2017 presents ‘Arduino Mania’ - display your mega project as well as show off your Arduino acumen. Create a security based project on Arduino and contribute to the security systems of today. Don’t forget, this is a team effort – bring along three more friends, and form a group of four, to compete and win exciting prizes!<br> Date: 7.10.2017 Timing: 11 AM-1 PM
-                                        <br> For further details, mail us at<a href="mailto:innerve-techevents@gmail.com"> innerve-techevents@gmail.com </a>
-
-                                    </p>
-                                </div>
-                                </div>
-                                <br>
-                                <br>
-                                <!--
-                                class="explore" onclick="myFunction()" style="background-color:transparent; border:transparent;
-                                -->
-                                <div id="element1" style="position:relative; bottom:12px">
-                                <img src="rules.png" onclick="myFunction14()" id="rules">
-                                </div>
-                                <!-- <p id="demo"></p> -->
-                                <script>
-                                    function myFunction14(){
-                                        document.getElementById("demo14").innerHTML ="1. Projects to be demonstrated by the participants should be based on Arduino. No other platform is allowed<br> 2.The decision of the judges will be final <br> 3. Participants need to carry your own extension  <br> 4.     A team should comprise of a maximum of four participants ";
-
-
-                                }
-                                </script>
-                                
-                              
-                                <div id="element2" style="height:10px">
-                                    <a href='/registerevent.html'><p class="explore"><span></span>REGISTER</p></a>
-                                </div>
-                                <div id="element3" style="position:relative; bottom:19px">
-                                    <a href='https://m.facebook.com/igdtuwinnerve/photos/a.834600699984172.1073741828.833869116723997/1305705462873691/?type=3'><i class="fa fa-facebook-square fa-4x" aria-hidden="true" ></i></a>
-                                </div>
-                                <div id="element4" style="height:10px">
-                                <p class="explore"><span></span>Back</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- EVE 2 -->
-                    <!-- /.eve-b2 -->
-
-                    <!-- EVE 3 -->
-                    <!-- /.eve-b12 -->
-
-                </div><!-- /.eve-overlays -->
 
                 <div class="secondlife-overlays">
                     <!-- secondlife INTRO -->
                     <div class="overlay secondlife-intro intro-overlay">
                         <div class="inner">
                             <div class="centered">
-                                <p class="info-heading">MAE/B.Arch Events</p>
+                                <p class="info-heading">Robotics Events</p>
                                 <div class="inner-content">
-                                    <p>Here are some Mae/B.Arch events. Use plus button to explore about the event.</p>
+                                    <p>Here are some Robotics events. Use plus button to explore about the event.</p>
                                 </div>
                                  
                             <p class="explore"><span></span>Explore</p>
@@ -575,16 +347,16 @@ Date: 7.10.2017 Timing: 10 AM-1:30 PM
                     <div class="overlay secondlife-b1">
                         <div class="inner">
                             <div class="centered">
-                                <p class="info-heading"> FIDGET SPINNER</p>
-                                <div style="overflow: auto;">
+                                <p class="info-heading"> ROBORACE</p>
+                               
                                 <div class="inner-content">
-                                    <!--
-                                    <p class="info-sub-heading">Did you know?</p>
-                                    -->
-                                    <p id="demo25">The world has recently seen a new fad in the form of fidget spinners, and almost everyone owns at least one. However, if you can’t find the right one for you, combine your mechanics knowledge and the want for one of these extremely intriguing objects, and create the perfect fidget spinner! <br> Date: 7.10.2017 Timings: 1PM - 4PM
+                                    
+                                    <p class="info-sub-heading">Want your robot to beat others?</p>
+                                   
+                                    <p id="demo10">Come with your bots and be a part of ROBORACE, the right place to show your potential in building robots. The task of the robot is to move over the uneven surfaces - inclined, rough terrains, etc - from the starting point and move to the ending point in minimum amount of time. Come, race your robots and win prizes! <br> Date: 6.10.2017 Timing: 10 AM-2 PM
                                         <br> For further details, mail us at<a href="mailto:innerve-techevents@gmail.com"> innerve-techevents@gmail.com </a>
                                     </p>
-                                </div>
+                             
                                 </div>
                                 <br>
                                 <br>
@@ -592,12 +364,12 @@ Date: 7.10.2017 Timing: 10 AM-1:30 PM
                                 class="explore" onclick="myFunction()" style="background-color:transparent; border:transparent;
                                 -->
                                 <div id="element1" style="position:relative; bottom:12px">
-                                <img src="rules.png" onclick="myFunction25()" id="rules">
+                                <img src="rules.png" onclick="myFunction10()" id="rules">
                                 </div>
                                 <!-- <p id="demo"></p> -->
                                 <script>
-                                    function myFunction25(){
-                                        document.getElementById("demo25").innerHTML = "1.   Participants will not be allowed to use external material <br> 2.   Participants will have to make spinner within given dimensions  <br> 3. No restrictions should be there while rotating <br>  4. It is an individual event ";
+                                    function myFunction10(){
+                                        document.getElementById("demo10").innerHTML = "1.The robot should be self-constructed<br>2.The robots have to compete with robots of other participants and reach the end line in the minimum time possible<br>3.There will be 3 levels and participants will be shortlisted on the basis of previous races<br>4.Size of robot  30cm30cm<br>5.Robot can be wired or wireless. In case of wired robot length of wire should be greater than 5m<br>6.Max power supply provided  24V<br>7.Weight of robot should not exceed 6Kg <br>8. A team should consist of a maximum of four participants";
                                 }
                                 </script>
                                 
@@ -606,7 +378,7 @@ Date: 7.10.2017 Timing: 10 AM-1:30 PM
                                     <a href='/registerevent.html'><p class="explore"><span></span>REGISTER</p></a>
                                 </div>
                                 <div id="element3" style="position:relative; bottom:19px">
-                                    <a href='https://m.facebook.com/story.php?story_fbid=1304714126306158&id=833869116723997'><i class="fa fa-facebook-square fa-4x" aria-hidden="true" ></i></a>
+                                    <a href='https://m.facebook.com/igdtuwinnerve/photos/a.979322245512016.1073741831.833869116723997/1307642879346616/?type=3&source=48'><i class="fa fa-facebook-square fa-4x" aria-hidden="true" ></i></a>
                                 </div>
                                 <div id="element4" style="height:10px">
                                 <p class="explore"><span></span>Back</p>
@@ -614,20 +386,21 @@ Date: 7.10.2017 Timing: 10 AM-1:30 PM
                             </div>
                         </div>
                     </div><!-- /.secondlife-b1 -->
+                    
                     <div class="overlay secondlife-b2">
                         <div class="inner">
                             <div class="centered">
-                                <p class="info-heading"> Junkyard</p>
-                                <div style="overflow: auto;">
-                                <div class="inner-content">
-                                    <!--
-                                    <p class="info-sub-heading">Did you know?</p>
-                                    -->
-                                    <p id="demo26">Exclusiveness of a creator lies in connecting things and synthesizing new things from a range of the most unusual objects. If you think you can make best out of junk, hop in.<br> Innerve’17 presents ‘Junkyard’, make something productive from the junk provided.<br>
-Date: 7.10.2017  Timing: 12-3PM
+                                <p class="info-heading"> Robo Maze</p>
+                                                               <div class="inner-content">
+                                    
+                                    <p class="info-sub-heading">Does your robot have the ability to face the hurdles , beat them and move ahead ?</p>
+                                    
+                                    <p id="demo26">If so, come along with your bots and solve the hardest maze ever. Innerve 2017 presents ‘Robo Maze’- a robo hurdle race. The robot has to complete the track by cross all the hurdles successfully in the minimum time with maximum points. The hurdles will test your robot from all perspectives. Let the best robo win!<br>
+Date: 7.10.2017
+Timing: 2-6 PM
                                         <br> For further details, mail us at<a href="mailto:innerve-techevents@gmail.com"> innerve-techevents@gmail.com </a>
                                     </p>
-                                </div>
+                               
                                 </div>
                                 <br>
                                 <br>
@@ -640,7 +413,7 @@ Date: 7.10.2017  Timing: 12-3PM
                                 <!-- <p id="demo"></p> -->
                                 <script>
                                     function myFunction26(){
-                                        document.getElementById("demo26").innerHTML = "1. Each team should consists of two membersl <br> 2.  Each team should formulate their own ideas and design  <br> 3. Non-working models shall not be allowed to be showcased <br>  4. Participants must comply with the rules of the area where model shall be built <br> 5. Junkyard wars reserves the right to eliminate the participants in case of any misconduct <br> 6. The decision of the judges shall be final  <br> 7. No outside materials can be used for making model ";
+                                        document.getElementById("demo26").innerHTML = "1.Robot has to cross the maze in minimum time <br> 2.The robot will have to complete the track passing all the hurdles<br> 3. Points will be deducted in case of foul <br>  4. Dimensions of robot  30cm30cm30cm <br>  5. Max Voltage at any point  24V.<br>  6. No direct use of remote or smartphone is allowed.<br>  7. Robot can be wired/wireless. In case of wired robot length of wire should be greater than 5m.<br>8.The hurdles will  may include<br>Placing a no. of boxes in a row.<br>Crossing a bent over bridge.<br>Move on a specified colored line.<br>9.A team should consist of a maximum of four participants. ";
                                 }
                                 </script>
                                 
@@ -649,7 +422,7 @@ Date: 7.10.2017  Timing: 12-3PM
                                     <a href='/registerevent.html'><p class="explore"><span></span>REGISTER</p></a>
                                 </div>
                                 <div id="element3" style="position:relative; bottom:19px">
-                                    <a href='https://m.facebook.com/story.php?story_fbid=1305626739548230&id=833869116723997'><i class="fa fa-facebook-square fa-4x" aria-hidden="true" ></i></a>
+                                    <a href='https://m.facebook.com/story.php?story_fbid=1307572036020367&id=833869116723997'><i class="fa fa-facebook-square fa-4x" aria-hidden="true" ></i></a>
                                 </div>
                                 <div id="element4" style="height:10px">
                                 <p class="explore"><span></span>Back</p>
@@ -659,21 +432,67 @@ Date: 7.10.2017  Timing: 12-3PM
                     </div>
 
 
-                    <div class="overlay secondlife-b3">
+
+
+                    <div class="overlay secondlife-b4">
                         <div class="inner">
                             <div class="centered">
-                                <p class="info-heading"> DESIGN DUEL</p>
-                                <div style="overflow: auto;">
+                                <p class="info-heading"> LFR</p>
+                                                               <div class="inner-content">
+                                    
+                                    <p class="info-sub-heading">You have to follow one path to achieve your goal – </p>
+                                    
+                                    <p id="demo30">but after reaching the specific point, the path changes as per the goal. Be an innovator and walk on the lines of change. Innerve’17 presents the LFR challenge, make your Bot complete the course in the shortest period of time while accurately tracking the course line from start to finish.Specifications of LFR:<br>These rounds are based in a line following robot. It will comprises of a track laid in black strip on white sheet, having a starting & finishing line with 3-5 intermediate check points<br>Robot will have to follow the black line from start to finish for successful completion of the track .width of black strip is nearly 1.5-2 inches.<br>The robot should fit in a square of 25*25cm<br> For further details, mail us at<a href="mailto:innerve-techevents@gmail.com"> innerve-techevents@gmail.com </a></p>
+                               
+                                </div>
+                                <br>
+                                <br>
+                                <!--
+                                class="explore" onclick="myFunction()" style="background-color:transparent; border:transparent;
+                                -->
+                                <div id="element1" style="position:relative; bottom:12px">
+                                <img src="rules.png" onclick="myFunction30()" id="rules">
+                                </div>
+                                <!-- <p id="demo"></p> -->
+                                 <script>
+                                    function myFunction30(){
+                                        document.getElementById("demo30").innerHTML = "1.If no machine is able to complete the track then the machine that has crossed most checkpoints will be placed higher in the ranking. <br> 2.If the number of checkpoints cleared are also same then the team will a longer distance travelled from the last checkpoint cleared will be placed higher.<br> 3. In case robot goes off track and is unable to come on track on its own then the team will be allowed to only pick or move the robot with their hands and place it on track again every hand touch will results in a penalty of 50 points. <br>  4. After every hand touch robots will have to begin from the last checkpoint cleared. If teams fail to do clear even the first checkpoint,the team will begin from starting line. <br>  5. The top teams in terms of points will be declared as a winner. ";
+                                }
+                                </script>
+                               
+                                
+                              
+                                <div id="element2" style="height:10px">
+                                    <a href='/registerevent.html'><p class="explore"><span></span>REGISTER</p></a>
+                                </div>
+                                <div id="element3" style="position:relative; bottom:19px">
+                                    <a href='https://m.facebook.com/story.php?story_fbid=1308207139290190&substory_index=0&id=833869116723997&ref=page_internal'><i class="fa fa-facebook-square fa-4x" aria-hidden="true" ></i></a>
+                                </div>
+                                <div id="element4" style="height:10px">
+                                <p class="explore"><span></span>Back</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="overlay secondlife-b3">
+                        <div class="inner" >
+                            <div class="centered" >
+                                <p class="info-heading"> Robo Premier League</p>
+                                
                                 <div class="inner-content">
-                                    <!--
-                                    <p class="info-sub-heading">Did you know?</p>
-                                    -->
-                                    <p id="demo27">Good graphic design solutions to communication problems. A high-performing digital mind thinks not just logically, but out of the box as well. If you consider yourself fitting the constraints, you’re at the right place. Innerve’17 presents ‘Design Duel’, design your 3d model/cad model on the given problem statement in minimum time.<br>
-Date: 6.10.2017 Timing: 1 PM-4 PM 
+                                    
+                                    <p class="info-sub-heading">Can a robot inherit the properties of human?</p>
+                                    
+                                    <p id="demo27" >Not yet, but we CAN make it differentiate between things, control it and put it to work! Innerve’17 presents ‘Robo Premier League’, a robo soccer championship. Make your robo play the robo-world version of soccer, and score points to win the League!<br>
+Date: 7.10.2017
+Timing: 10AM-2PM
                                         <br> For further details, mail us at<a href="mailto:innerve-techevents@gmail.com"> innerve-techevents@gmail.com </a>
                                     </p>
                                 </div>
-                                </div>
+                                
                                 <br>
                                 <br>
                                 <!--
@@ -685,7 +504,7 @@ Date: 6.10.2017 Timing: 1 PM-4 PM
                                 <!-- <p id="demo"></p> -->
                                 <script>
                                     function myFunction27(){
-                                        document.getElementById("demo27").innerHTML = "1. Designing should be completed in given time <br> 2.  No use of internet is allowed  <br> 3. Participants should perform individually  ";
+                                        document.getElementById("demo27").innerHTML = "1. Each team consists of maximum of three members.<br>2.Robots used should be manually control(wired or wireless)<br>3.Dimensions of robot 500mm500mm500mm and weight 5kg max<br>4.Team with maximum number of balls in their compartment at the time of completion of match will emerge as winner.<br>5.The ball can be dragged or pushed by team.<br>6.A maximum of two members per team will be allowed to remain close to the field for operating the robots.<br>7.Any act of misbehavior or misconduct will lead to immediate disqualification.<br>8.In case of any discrepancy the final decision rest in hand of coordinators.";
                                 }
                                 </script>
                                 
@@ -694,7 +513,7 @@ Date: 6.10.2017 Timing: 1 PM-4 PM
                                     <a href='/registerevent.html'><p class="explore"><span></span>REGISTER</p></a>
                                 </div>
                                 <div id="element3" style="position:relative; bottom:19px">
-                                    <a href='https://m.facebook.com/story.php?story_fbid=1306508349460069&id=833869116723997'><i class="fa fa-facebook-square fa-4x" aria-hidden="true" ></i></a>
+                                    <a href='https://m.facebook.com/story.php?story_fbid=1307836285993942&id=833869116723997&ref=page_internal'><i class="fa fa-facebook-square fa-4x" aria-hidden="true" ></i></a>
                                 </div>
                                 <div id="element4" style="height:10px">
                                 <p class="explore"><span></span>Back</p>
